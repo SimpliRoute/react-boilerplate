@@ -1,4 +1,4 @@
-export enum TasksActionTypes {
+enum TasksActionTypes{
     GetTasks = 'GET_TASKS',
     GetTasksSuccess = 'GET_TASKS_SUCCESS',
     GetTasksFailed = 'GET_TASKS_FAILED',
@@ -17,4 +17,4 @@ export default (state: any = initialState, action: any) => {
         default:
             return state;
     }
-}
+};

@@ -1,5 +1,5 @@
 interface State {
-    open: boolean
+    open: boolean;
 }
 
 export default State;

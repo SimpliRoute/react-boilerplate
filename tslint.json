@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "tslint-xo/space",
+    "tslint-react"
+  ],
+  "rules": {
+    "file-name-casing": [false],
+    "variable-name": [false],
+    "object-curly-spacing": [false],
+    "typedef": [false],
+    "no-empty-line-after-opening-brace": [false],
+    "prefer-const-enum": [false],
+    "ter-padded-blocks": [false],
+    "comment-format": [false],
+    "no-import-side-effect": [false]
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "src/testsSetup.ts",
+      "src/serviceWorker.ts",
+      "src/react-app-env.d.ts"
+    ]
+  }
+}

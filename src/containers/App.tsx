@@ -17,7 +17,6 @@ import Home from './Home';
 import State from './State';
 import Props from './Props';
 
-
 class App extends Component<Props, State> {
 
   state: State = {
@@ -28,15 +27,15 @@ class App extends Component<Props, State> {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar position='static'>
           <Toolbar>
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+            <IconButton className={classes.menuButton} color='inherit' aria-label='Menu'>
               <MenuIcon />
             </IconButton>
-            <Typography component="div" variant="h6" color="inherit" className={classes.flex}>
+            <Typography component='div' variant='h6' color='inherit' className={classes.flex}>
               <div>ExampleApp {this.state.open}</div>
             </Typography>
-            <Button color="inherit">Login</Button>
+            <Button color='inherit'>Login</Button>
           </Toolbar>
         </AppBar>
         <Home />

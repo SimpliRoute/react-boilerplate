@@ -1,3 +1,3 @@
 export default interface State {
-    title: string
+    title: string;
 }

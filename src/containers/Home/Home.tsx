@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Grid from '@material-ui/core/Grid';
 
-import { withStyles } from "@material-ui/core/styles";
+import { withStyles } from '@material-ui/core/styles';
 
 import BasicCard from '../../components/BasicCard';
 
