@@ -4,15 +4,39 @@
     "tslint-react"
   ],
   "rules": {
-    "file-name-casing": [false],
-    "variable-name": [false],
-    "object-curly-spacing": [false],
-    "typedef": [false],
-    "no-empty-line-after-opening-brace": [false],
-    "prefer-const-enum": [false],
-    "ter-padded-blocks": [false],
-    "comment-format": [false],
-    "no-import-side-effect": [false]
+    "file-name-casing": [
+      false
+    ],
+    "variable-name": [
+      false
+    ],
+    "object-curly-spacing": [
+      false
+    ],
+    "typedef": [
+      false
+    ],
+    "no-empty-line-after-opening-brace": [
+      false
+    ],
+    "prefer-const-enum": [
+      false
+    ],
+    "ter-padded-blocks": [
+      false
+    ],
+    "comment-format": [
+      false
+    ],
+    "no-import-side-effect": [
+      false
+    ],
+    "no-trailing-whitespace": [
+      false
+    ],
+    "jsx-no-multiline-js": [
+      false
+    ]
   },
   "linterOptions": {
     "exclude": [
