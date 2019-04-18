@@ -15,7 +15,7 @@ import styles from './styles';
 import Props from './Props';
 import State from './State';
 
-class Home extends Component<Props, State> {
+export class Home extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.handleAddNewTaskButton = this.handleAddNewTaskButton.bind(this);
@@ -64,4 +64,8 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default withStyles(styles)(connect(mapStateToProps, mapDispatchToProps)(Home));
+export const HomeWithStyles = withStyles(styles)(Home);
+
+export default connect(mapStateToProps, mapDispatchToProps)(
+    HomeWithStyles
+);
