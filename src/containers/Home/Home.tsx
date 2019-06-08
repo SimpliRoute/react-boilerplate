@@ -32,21 +32,20 @@ export class Home extends Component<Props, State> {
 
         return (
             <div className={classes.root}>
-                <Grid container={true} spacing={8} direction='row'>
+                <Grid container={true} spacing={4} direction='row'>
                     {this.props.tasks.map((task: any, idx: number) => {
                         return (
                             <Grid key={idx} item={true} xs={6}>
-                                {task.name}
                                 <BasicCard />
                             </Grid>
                         );
                     })}
                 </Grid>
-                <Grid container={true} spacing={8} direction='row'>
+                <Grid container={true} spacing={3} direction='row'>
                     <Grid item={true} xs={12}>
                         <Button variant='contained' color='primary' onClick={this.handleAddNewTaskButton}>
                             Primary
-                      </Button>
+                        </Button>
                     </Grid>
                 </Grid>
             </div>

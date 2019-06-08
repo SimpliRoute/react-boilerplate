@@ -2,7 +2,8 @@ import { createStyles } from '@material-ui/core';
 
 const styles = () => createStyles({
     root: {
-        padding: 30
+        paddingTop: 50,
+        paddingLeft: 10
     }
 });
 

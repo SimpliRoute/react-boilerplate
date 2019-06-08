@@ -1,6 +1,6 @@
 import React from 'react';
 import { ShallowWrapper } from 'enzyme';
-import { createShallow } from '@material-ui/core/test-utils';
+import createShallow from '@material-ui/core/test-utils/createShallow';
 import Grid from '@material-ui/core/Grid';
 import { Home } from './Home';
 
