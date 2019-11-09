@@ -12,9 +12,8 @@ export default (initialState: object) => {
     return createStore(
         rootReducer,
         initialState,
-        composeWithDevTools(applyMiddleware(
-            reduxImmutableStateInvariant(),
-            sagaMiddleware
-        ))
+        composeWithDevTools(
+            applyMiddleware(reduxImmutableStateInvariant(), sagaMiddleware)
+        )
     );
 };

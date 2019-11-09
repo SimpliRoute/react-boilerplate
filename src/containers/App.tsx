@@ -18,30 +18,38 @@ import State from './State';
 import Props from './Props';
 
 class App extends Component<Props, State> {
+    state: State = {
+        open: true
+    };
 
-  state: State = {
-    open: true
-  };
-
-  render() {
-    const { classes } = this.props;
-    return (
-      <div className={classes.root}>
-        <AppBar position='static'>
-          <Toolbar>
-            <IconButton className={classes.menuButton} color='inherit' aria-label='Menu'>
-              <MenuIcon />
-            </IconButton>
-            <Typography component='div' variant='h6' color='inherit' className={classes.flex}>
-              <div>ExampleApp {this.state.open}</div>
-            </Typography>
-            <Button color='inherit'>Login</Button>
-          </Toolbar>
-        </AppBar>
-        <Home />
-      </div>
-    );
-  }
+    render() {
+        const { classes } = this.props;
+        return (
+            <div className={classes.root}>
+                <AppBar position="static">
+                    <Toolbar>
+                        <IconButton
+                            className={classes.menuButton}
+                            color="inherit"
+                            aria-label="Menu"
+                        >
+                            <MenuIcon />
+                        </IconButton>
+                        <Typography
+                            component="div"
+                            variant="h6"
+                            color="inherit"
+                            className={classes.flex}
+                        >
+                            <div>ExampleApp {this.state.open}</div>
+                        </Typography>
+                        <Button color="inherit">Login</Button>
+                    </Toolbar>
+                </AppBar>
+                <Home />
+            </div>
+        );
+    }
 }
 
 export default withRoot(withStyles(styles)(App));

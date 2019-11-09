@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import { Home } from './Home';
 
 describe('Testing Home Component basics', () => {
-
     it('renders without styles', () => {
         const shallow = createShallow();
 
@@ -18,6 +17,5 @@ describe('Testing Home Component basics', () => {
         const wrapper: ShallowWrapper = shallow(<Home {...params} />);
 
         expect(wrapper.find(Grid)).toHaveLength(3);
-
     });
 });

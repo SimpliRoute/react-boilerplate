@@ -32,7 +32,7 @@ export class Home extends Component<Props, State> {
 
         return (
             <div className={classes.root}>
-                <Grid container={true} spacing={4} direction='row'>
+                <Grid container={true} spacing={4} direction="row">
                     {this.props.tasks.map((task: any, idx: number) => {
                         return (
                             <Grid key={idx} item={true} xs={6}>
@@ -41,9 +41,13 @@ export class Home extends Component<Props, State> {
                         );
                     })}
                 </Grid>
-                <Grid container={true} spacing={3} direction='row'>
+                <Grid container={true} spacing={3} direction="row">
                     <Grid item={true} xs={12}>
-                        <Button variant='contained' color='primary' onClick={this.handleAddNewTaskButton}>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={this.handleAddNewTaskButton}
+                        >
                             Primary
                         </Button>
                     </Grid>
@@ -65,6 +69,7 @@ const mapDispatchToProps = (dispatch: any) => {
 
 export const HomeWithStyles = withStyles(styles)(Home);
 
-export default connect(mapStateToProps, mapDispatchToProps)(
-    HomeWithStyles
-);
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(HomeWithStyles);
