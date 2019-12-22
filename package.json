@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "doc:code": "typedoc"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +49,7 @@
     "enzyme-adapter-react-16": "1.15.2",
     "eslint": "6.8.0",
     "prettier": "1.19.1",
-    "redux-devtools-extension": "2.13.8"
+    "redux-devtools-extension": "2.13.8",
+    "typedoc": "0.15.5"
   }
 }

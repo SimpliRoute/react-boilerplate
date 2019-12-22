@@ -1,0 +1,6 @@
+{
+    "mode": "file",
+    "out": "docs",
+    "includes": "./src/**",
+    "exclude": "./src/**/__tests__/*"
+}
