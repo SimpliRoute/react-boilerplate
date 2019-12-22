@@ -8,15 +8,15 @@ export default createMuiTheme({
         primary: {
             dark: primaryColor[600],
             light: red.A200,
-            main: primaryColor[700]
+            main: primaryColor[700],
         },
         secondary: {
             dark: red.A700,
             light: '#ffffff',
-            main: '#ffffff'
-        }
+            main: '#ffffff',
+        },
     },
     typography: {
-        fontFamily: 'Lato, sans-serif'
-    }
+        fontFamily: 'Lato, sans-serif',
+    },
 });

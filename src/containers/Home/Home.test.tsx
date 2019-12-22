@@ -11,7 +11,7 @@ describe('Testing Home Component basics', () => {
         const params = {
             tasks: [],
             addTask: jest.fn(),
-            classes: { root: '' }
+            classes: { root: '' },
         };
 
         const wrapper: ShallowWrapper = shallow(<Home {...params} />);

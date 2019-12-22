@@ -19,7 +19,7 @@ import Props from './Props';
 
 class App extends Component<Props, State> {
     state: State = {
-        open: true
+        open: true,
     };
 
     render() {

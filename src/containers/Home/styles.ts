@@ -4,8 +4,8 @@ const styles = () =>
     createStyles({
         root: {
             paddingTop: 50,
-            paddingLeft: 10
-        }
+            paddingLeft: 10,
+        },
     });
 
 export default styles;

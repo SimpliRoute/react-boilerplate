@@ -23,7 +23,7 @@ export class Home extends Component<Props, State> {
 
     handleAddNewTaskButton(): void {
         this.props.addTask({
-            name: 'Super task'
+            name: 'Super task',
         });
     }
 
@@ -58,18 +58,15 @@ export class Home extends Component<Props, State> {
 }
 
 const mapStateToProps = (state: any) => ({
-    tasks: state.tasks
+    tasks: state.tasks,
 });
 
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        addTask: bindActionCreators(actions.addTask, dispatch)
+        addTask: bindActionCreators(actions.addTask, dispatch),
     };
 };
 
 export const HomeWithStyles = withStyles(styles)(Home);
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(HomeWithStyles);
+export default connect(mapStateToProps, mapDispatchToProps)(HomeWithStyles);

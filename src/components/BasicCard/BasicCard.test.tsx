@@ -17,5 +17,5 @@ it('should render without throwing an error', () => {
 });
 
 it('should have 4 typography components inside', () => {
-  expect(mount(<BasicCard />).find(Typography).length).toBe(4);
+    expect(mount(<BasicCard />).find(Typography).length).toBe(4);
 });

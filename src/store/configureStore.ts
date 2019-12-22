@@ -13,7 +13,7 @@ export default (initialState: object) => {
         rootReducer,
         initialState,
         composeWithDevTools(
-            applyMiddleware(reduxImmutableStateInvariant(), sagaMiddleware)
-        )
+            applyMiddleware(reduxImmutableStateInvariant(), sagaMiddleware),
+        ),
     );
 };
