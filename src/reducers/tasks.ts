@@ -1,3 +1,5 @@
+import { Task } from '../store/configureStore';
+
 enum TasksActionTypes {
     GetTasks = 'GET_TASKS',
     GetTasksSuccess = 'GET_TASKS_SUCCESS',
@@ -7,17 +9,23 @@ enum TasksActionTypes {
 
 export const initialState = [];
 
+export interface TaskActionType {
+    type: TasksActionTypes;
+    payload?: Task;
+    items?: Task[];
+}
+
 export const actions = {
-    getTasks: () => ({ type: TasksActionTypes.GetTasks }),
-    addTask: (task: any) => ({ type: TasksActionTypes.AddTask, payload: task }),
+    getTasks: (): TaskActionType => ({ type: TasksActionTypes.GetTasks }),
+    addTask: (task: Task): TaskActionType => ({ type: TasksActionTypes.AddTask, payload: task }),
 };
 
-export default (state: any = initialState, action: any) => {
+export default (state: Task[] = initialState, action: TaskActionType): Task[] => {
     switch (action.type) {
         case TasksActionTypes.GetTasksSuccess:
-            return action.items;
+            return action.items!;
         case TasksActionTypes.AddTask:
-            return state.concat([action.payload]);
+            return state.concat([action.payload!]);
         default:
             return state;
     }

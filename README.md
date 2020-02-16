@@ -19,4 +19,11 @@ $ yarn test
 $ yarn test:watch
 ```
 
+#### Linter 
+
+```bash
+# check linter
+$ yarn lint:check
+```
+
 This project was generated with **[create-react-app](https://github.com/facebook/create-react-app)**

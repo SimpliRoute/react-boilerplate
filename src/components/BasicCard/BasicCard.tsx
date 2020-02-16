@@ -1,17 +1,14 @@
 import * as React from 'react';
 
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import withStyles from '@material-ui/core/styles/withStyles';
+import {
+    Button, Card, CardActions, 
+    CardContent, Typography 
+} from '@material-ui/core';
 
-import styles from './styles';
-import Props from './Props';
+import { useStyles, Props } from './types';
 
-const BasicCard = (props: Props) => {
-    const { classes } = props;
+const BasicCard = (props: Props): JSX.Element => {
+    const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
     return (
         <Card>
@@ -38,4 +35,4 @@ const BasicCard = (props: Props) => {
     );
 };
 
-export default withStyles(styles)(BasicCard);
+export default BasicCard;
